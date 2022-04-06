@@ -12,8 +12,10 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetString("Name","Shuvam");
         rb = GetComponent<Rigidbody>();
         score = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        print(PlayerPrefs.GetString("Name"));
     }
     // Update is called once per frame
     void Update()
